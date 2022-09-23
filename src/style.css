@@ -66,6 +66,10 @@ li {
   text-decoration: none;
 }
 
+small .active {
+  font-weight: 800;
+}
+
 small a {
   color: #bebebe;
   text-decoration: none;
