@@ -35,6 +35,10 @@ li {
   line-height: 19px;
 }
 
+#description {
+  text-transform: capitalize;
+}
+
 .overview {
   margin-bottom: 20px;
 }
