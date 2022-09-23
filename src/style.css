@@ -75,3 +75,11 @@ small a {
 small a:hover {
   color: #56595c;
 }
+
+#search-form {
+  margin-bottom: 10px;
+}
+
+#search-form .btn {
+  margin-left: 20px;
+}
