@@ -12,6 +12,7 @@ body {
   padding: 20px;
   border: 1px solid #e0e2db;
   border-radius: 20px;
+  background-color: #f9f9f9;
 }
 
 h1 {
@@ -63,4 +64,14 @@ li {
   color: #56595c;
   font-weight: 600;
   text-decoration: none;
+}
+
+small a {
+  color: #bebebe;
+  text-decoration: none;
+  font-size: smaller;
+}
+
+small a:hover {
+  color: #56595c;
 }
