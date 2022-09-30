@@ -70,10 +70,16 @@ small .active {
   font-weight: 800;
 }
 
-small a {
+.footer {
+  margin-left: 30px;
   color: #bebebe;
   text-decoration: none;
   font-size: smaller;
+}
+
+.footer a {
+  color: #bebebe;
+  text-decoration: none;
 }
 
 small a:hover {

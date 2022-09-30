@@ -118,35 +118,35 @@ function handlesubmit(event) {
 
 //  unit converter
 
-function showFahrenheit(event) {
-  event.preventDefault();
-  celsiusConversion.classList.remove("active");
-  fahrenheitConversion.classList.add("active");
-  let fahrenheitTemp = (celsiusTemp * 9) / 5 + 32;
-  let temperatureElement = document.querySelector("#temp");
-  temperatureElement.innerHTML = Math.round(fahrenheitTemp);
-}
+//function showFahrenheit(event) {
+//  event.preventDefault();
+//  celsiusConversion.classList.remove("active");
+//  fahrenheitConversion.classList.add("active");
+//  let fahrenheitTemp = (celsiusTemp * 9) / 5 + 32;
+//  let temperatureElement = document.querySelector("#temp");
+//  temperatureElement.innerHTML = Math.round(fahrenheitTemp);
+//}
 
-function showCelsius(event) {
-  event.preventDefault();
-  fahrenheitConversion.classList.remove("active");
-  celsiusConversion.classList.add("active");
-  let temperatureElement = document.querySelector("#temp");
-  temperatureElement.innerHTML = Math.round(celsiusTemp);
-}
+//function showCelsius(event) {
+//  event.preventDefault();
+//  fahrenheitConversion.classList.remove("active");
+//  celsiusConversion.classList.add("active");
+//  let temperatureElement = document.querySelector("#temp");
+//  temperatureElement.innerHTML = Math.round(celsiusTemp);
+//}
 
 //Global variables
 
-let celsiusTemp = null;
-let fahrenheitTemp = null;
+//let celsiusTemp = null;
+//let fahrenheitTemp = null;
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handlesubmit);
 
-let fahrenheitConversion = document.querySelector("#fahrenheit-conv");
-fahrenheitConversion.addEventListener("click", showFahrenheit);
+//let fahrenheitConversion = document.querySelector("#fahrenheit-conv");
+//fahrenheitConversion.addEventListener("click", showFahrenheit);
 
-let celsiusConversion = document.querySelector("#celsius-conv");
-celsiusConversion.addEventListener("click", showCelsius);
+//let celsiusConversion = document.querySelector("#celsius-conv");
+//celsiusConversion.addEventListener("click", showCelsius);
 
 search("New York");
