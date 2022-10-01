@@ -11,10 +11,21 @@
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
-
+    <link
+      href="https://fonts.googleapis.com/css2?family=Candal&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="src/style.css" />
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/560e12286e.js"
+      crossorigin="anonymous"
+    ></script>
 
     <title>Weather</title>
   </head>
@@ -32,42 +43,46 @@
                 id="cityInput"
                 autocomplete="off"
               />
-              <input
-                type="submit"
-                class="btn btn-primary"
-                value="Search"
-                id="xyz"
-              />
+              <button type="submit" class="btn" id="xyz">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
             </div>
           </form>
           <div class="overview">
-            <h1 id="city"></h1>
-            <ul>
-              <li id="date"></li>
-              <li id="description"></li>
-            </ul>
-          </div>
-          <div class="row">
-            <div class="col-6">
+            <div>
+              <h1 id="city"></h1>
+              <h2 id="date"></h2>
+              <hr />
+            </div>
+            <div class="details">
+              <ul>
+                <li id="description"></li>
+                <li>
+                  <span class="label">Humidity</span>
+                  <span class="info"><span id="humidity"></span> %</span>
+                </li>
+                <li>
+                  <span class="label">Wind</span>
+                  <span class="info"><span id="windspeed"></span> km/h</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="weatherImgTemp">
               <div class="d-flex weather-temperature">
-                <img id="icon" src="" alt="partly_cloudy" />
+                <img id="icon" />
                 <strong id="temp"></strong
                 ><small
                   >°C
                   <!--
-                    <a href="" id="celsius-conv" class="active"></a> |
-                  <a href="" id="fahrenheit-conv" class="">°F</a>
-                  -->
+                      <a href="" id="celsius-conv" class="active"></a> |
+                    <a href="" id="fahrenheit-conv" class="">°F</a>
+                    -->
                 </small>
               </div>
             </div>
-            <div class="col-6">
-              <ul>
-                <li>Humidity: <span id="humidity"></span> %</li>
-                <li>Wind: <span id="windspeed"></span> km/h</li>
-              </ul>
-            </div>
           </div>
+          <hr />
 
           <div class="weather-forecast" id="forecast"></div>
         </div>

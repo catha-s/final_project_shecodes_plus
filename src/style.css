@@ -1,6 +1,6 @@
 body {
-  font-family: arial, sans-serif;
-  color: #56595c;
+  font-family: "Nanum Gothic", sans-serif;
+  color: #383838;
 }
 
 .weather-app-wrapper {
@@ -10,16 +10,29 @@ body {
 
 .weather-app {
   padding: 20px;
-  border: 1px solid #e0e2db;
+  margin-bottom: 10px;
+  border: 1px solid #383838;
   border-radius: 20px;
   background-color: #ffffff;
+  box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.78);
+}
+
+hr {
+  opacity: 100;
 }
 
 h1 {
   font-size: 24px;
   font-weight: 100;
   line-height: 28px;
-  margin-bottom: 0;
+  margin-bottom: 10px;
+  display: inline-block;
+  font-family: "Candal", sans-serif;
+}
+
+h2 {
+  font-size: 18px;
+  float: right;
 }
 
 ul {
@@ -29,35 +42,65 @@ ul {
 
 li {
   list-style: none;
-  margin: 0;
+  margin: auto 0;
   padding: 0;
+  width: fit-content;
   font-size: 16px;
   font-weight: 100;
   line-height: 19px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-control:focus {
+  border-color: #ec6e4c;
+  box-shadow: 2px 2px 0 0 rgba(0, 0, 0, 0.22);
+}
+
+.btn {
+  background-color: #ec6e4c;
+  border-color: #ec6e4c;
+  color: #ffffff;
+}
+
+.btn:hover {
+  color: #ec6e4c;
+  background-color: #ffffff;
+  border-color: #ec6e4c;
+}
+
+.btn: .overview {
+  margin-top: 20px;
+}
+
+.details {
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.weatherImgTemp {
+  display: inline-flex;
+  float: right;
 }
 
 #description {
   text-transform: capitalize;
 }
 
-.overview {
-  margin-bottom: 20px;
-}
-
 .weather-temperature img {
-  margin-right: 10px;
   height: 64px;
   width: 64px;
 }
 
 .weather-temperature strong {
-  font-size: 64px;
+  font-size: 48px;
   font-weight: 400;
-  line-height: 1;
+  line-height: 64px;
 }
 
 .weather-temperature small {
   font-size: 16px;
+  line-height: 40px;
 }
 
 .weather-temperature a {
@@ -66,15 +109,25 @@ li {
   text-decoration: none;
 }
 
+.label {
+  width: 70px;
+}
+
+.info {
+  width: 70px;
+  text-align: right;
+}
+
 small .active {
   font-weight: 800;
 }
 
 .footer {
-  margin-left: 30px;
+  margin-right: 22px;
   color: #bebebe;
   text-decoration: none;
   font-size: smaller;
+  float: right;
 }
 
 .footer a {
@@ -101,7 +154,7 @@ small a:hover {
 
 .forecast-date {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 800;
 }
 
 .forecast-img {
